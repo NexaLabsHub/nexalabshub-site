@@ -4,9 +4,159 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nexa Labs Pte. Ltd.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1B2430;
+    --ink-soft: #4A5568;
+    --paper: #F7F6F3;
+    --amber: #C8791F;
+    --amber-soft: #E8A33D;
+    --line: #D8D4C9;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+  header {
+    padding: 96px 0 72px;
+    border-bottom: 1px solid var(--line);
+  }
+  .brand {
+    font-family: 'Newsreader', serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--amber);
+    margin-bottom: 28px;
+  }
+  h1 {
+    font-family: 'Newsreader', serif;
+    font-weight: 400;
+    font-size: clamp(30px, 5vw, 40px);
+    line-height: 1.28;
+    letter-spacing: -0.01em;
+    max-width: 18ch;
+  }
+  .lede {
+    margin-top: 22px;
+    font-size: 17px;
+    color: var(--ink-soft);
+    max-width: 48ch;
+  }
+  section {
+    padding: 60px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  section:last-of-type { border-bottom: none; }
+  h2 {
+    font-family: 'Newsreader', serif;
+    font-weight: 500;
+    font-size: 21px;
+    margin-bottom: 24px;
+  }
+  p { max-width: 60ch; }
+  p + p { margin-top: 14px; }
+
+  .item {
+    padding: 26px 0;
+    border-top: 1px solid var(--line);
+  }
+  .item:first-of-type { border-top: none; padding-top: 0; }
+  .item h3 {
+    font-family: 'Newsreader', serif;
+    font-weight: 500;
+    font-size: 19px;
+    margin-bottom: 8px;
+  }
+  .item p {
+    color: var(--ink-soft);
+    font-size: 15.5px;
+    max-width: 54ch;
+  }
+  .item .tag {
+    display: block;
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin-top: 12px;
+  }
+  .item .tag a {
+    color: var(--ink);
+    text-decoration-color: var(--amber-soft);
+    text-underline-offset: 2px;
+  }
+
+  footer {
+    padding: 56px 0 96px;
+  }
+  footer a {
+    color: var(--ink);
+    text-decoration-color: var(--amber-soft);
+    text-underline-offset: 3px;
+  }
+  .legal {
+    margin-top: 28px;
+    font-size: 13.5px;
+    color: var(--ink-soft);
+  }
+
+  @media (max-width: 480px) {
+    header { padding: 64px 0 48px; }
+    section { padding: 44px 0; }
+  }
+</style>
 </head>
 <body>
-<h1>Nexa Labs Pte. Ltd.</h1>
-<p>Site coming soon.</p>
+
+<div class="wrap">
+
+  <header>
+    <div class="brand">Nexa Labs</div>
+    <h1>A solo-built software studio in Singapore.</h1>
+    <p class="lede">I design and ship a small number of focused products, one at a time — no sprawling roadmap, just a few things built properly.</p>
+  </header>
+
+  <section>
+    <h2>What I've built</h2>
+
+    <div class="item">
+      <h3>Eleven</h3>
+      <p>Eleven turns your own goals and reflections into a short, narrated story made just for you — a few calm minutes to listen to as your day starts or ends.</p>
+      <span class="tag">iOS · Available on the App Store</span>
+    </div>
+
+    <div class="item">
+      <h3>FrontPulse</h3>
+      <p>FrontPulse finds the Reddit conversations worth joining, the moment they happen — so outreach starts from something real, not a cold list.</p>
+      <span class="tag"><a href="https://frontpulse.app/" target="_blank" rel="noopener">frontpulse.app</a></span>
+    </div>
+
+    <div class="item">
+      <h3>Markel Copilot</h3>
+      <p>Markel Copilot handles the repetitive parts of go-to-market work — research, outreach, follow-up — so a small team can move like a bigger one.</p>
+      <span class="tag"><a href="https://meetmarkel-landing.pages.dev/#early-access" target="_blank" rel="noopener">Early access</a></span>
+    </div>
+  </section>
+
+  <footer>
+    <h2>Contact</h2>
+    <p>For questions about any of these, or anything else: <a href="mailto:nexalabs.hub@gmail.com">nexalabs.hub@gmail.com</a></p>
+    <p class="legal">Nexa Labs Pte. Ltd. · Privately held, registered in Singapore</p>
+  </footer>
+
+</div>
+
 </body>
 </html>
